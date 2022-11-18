@@ -6,12 +6,13 @@
 body {
     margin-top: 20px;
     display: flex;
-    background: green;
+    background: rgb(13, 7, 37);
     justify-content: center; 
-    height: 800px;
+    min-height: 500px;
+    color: white;
 }
 #conversor {
-    background: rgb(212, 212, 212);
+    background: rgb(37, 48, 99);
     width: 350px;
     height: 150px;
     display: grid;
@@ -19,10 +20,23 @@ body {
     border-radius: 10px;
 }
 
+section {
+    display: flex;
+    align-items: center;
+}
+
+section > div > div {
+    margin-bottom: 5px;
+}
+
 aside {
     display: flex;
-    color: rgb(90, 90, 90);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+}
+
+button {
+    cursor: pointer;
 }
 
