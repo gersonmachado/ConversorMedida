@@ -20,15 +20,27 @@ function calcular(resultado){
 
           }
 
-          if (a == 'dm'){
-               var tot = unidadedm()
-     
-          }
+     if (a == 'dm'){
+          var tot = unidadedm()
 
-          if (a == 'm'){
-               var tot = unidadedm()
-     
-          }
+     }
+
+     if (a == 'm'){
+          var tot = unidadem()
+
+     }
+     if (a == 'dam'){
+          var tot = unidadedam()
+
+     }
+     if (a == 'hm'){
+          var tot = unidadehm()
+
+     }
+     if (a == 'km'){
+          var tot = unidadekm()
+
+     }
      
           //retornar resultado
           var resultado = `${tot} ${b}`
@@ -121,7 +133,6 @@ function unidadecm(){
      return num
  }
 
-
  //Função converter DM para outros
 function unidadedm(){
 
@@ -163,7 +174,7 @@ function unidadedm(){
  }
 
  //Função converter M para outros
-function unidadedm(){
+function unidadem(){
 
      var a = document.querySelector('#unidades').value
      var b = document.querySelector('#unidades2').value
@@ -197,6 +208,126 @@ function unidadedm(){
      if (a == 'm' && b == 'km') {
           //decímetros para kilômetro
           num = num/1000
+     }
+      
+     return num
+ }
+ 
+//Função converter DAM para outros
+function unidadedam(){
+
+     var a = document.querySelector('#unidades').value
+     var b = document.querySelector('#unidades2').value
+     var num = document.querySelector('#numeroA').value
+ 
+     if (a == 'dam' && b == 'mm') {
+         //decâmetros para milímetros  
+         num = num*10000
+     }
+  
+     if (a == 'dam' && b == 'cm') {
+          //decâmetros para centímetros
+          num = num*1000
+     }
+      
+     if (a == 'dam' && b == 'dm') {
+          //decâmetros para decímetros
+          num = num*100
+     }
+  
+     if (a == 'dam' && b == 'm') {
+          //decâmetros para metros
+          num = num*10
+     }
+  
+     if (a == 'dam' && b == 'hm') {
+          //decâmetros para hectômetro
+          num = num/10
+     }
+  
+     if (a == 'm' && b == 'km') {
+          //decâmetros para kilômetro
+          num = num/100
+     }
+      
+     return num
+ }
+
+ //Função converter HM para outros
+function unidadehm(){
+
+     var a = document.querySelector('#unidades').value
+     var b = document.querySelector('#unidades2').value
+     var num = document.querySelector('#numeroA').value
+ 
+     if (a == 'hm' && b == 'mm') {
+         //hectômetro para milímetros  
+         num = num*100000
+     }
+  
+     if (a == 'hm' && b == 'cm') {
+          //hectômetro para centímetros
+          num = num*10000
+     }
+      
+     if (a == 'hm' && b == 'dm') {
+          //hectômetro para decímetros
+          num = num*1000
+     }
+  
+     if (a == 'hm' && b == 'm') {
+          //hectômetro para metros
+          num = num*100
+     }
+  
+     if (a == 'hm' && b == 'dam') {
+          //hectômetro para hectômetro
+          num = num*10
+     }
+  
+     if (a == 'hm' && b == 'km') {
+          //hectômetro para kilômetro
+          num = num/10
+     }
+      
+     return num
+ }
+
+  //Função converter KM para outros
+function unidadekm(){
+
+     var a = document.querySelector('#unidades').value
+     var b = document.querySelector('#unidades2').value
+     var num = document.querySelector('#numeroA').value
+ 
+     if (a == 'km' && b == 'mm') {
+         //kilômetro para milímetros  
+         num = num*1000000
+     }
+  
+     if (a == 'km' && b == 'cm') {
+          //kilômetro para centímetros
+          num = num*100000
+     }
+      
+     if (a == 'km' && b == 'dm') {
+          //kilômetro para decímetros
+          num = num*10000
+     }
+  
+     if (a == 'km' && b == 'm') {
+          //kilômetro para metros
+          num = num*1000
+     }
+  
+     if (a == 'km' && b == 'dam') {
+          //kilômetro para hectômetro
+          num = num*100
+     }
+  
+     if (a == 'km' && b == 'hm') {
+          //kilômetro para kilômetro
+          num = num*10
      }
       
      return num

@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: Tahoma, sans-serif;
     margin-top: 20px;
     display: flex;
     background: rgb(13, 7, 37);
@@ -16,7 +17,7 @@ body {
     width: 350px;
     height: 150px;
     display: grid;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -34,9 +35,19 @@ aside {
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+    margin-top: 3px;
 }
 
 button {
     cursor: pointer;
 }
 
+#info {
+    display: flex;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+#info > p:hover {
+    color:red;
+}
