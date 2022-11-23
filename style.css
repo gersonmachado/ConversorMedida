@@ -27,7 +27,7 @@ section {
 }
 
 section > div > div {
-    margin-bottom: 5px;
+    margin: -10px 0 5px 0;
 }
 
 aside {
@@ -45,7 +45,7 @@ button {
 #info {
     display: flex;
     justify-self: center;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 #info > p:hover {
